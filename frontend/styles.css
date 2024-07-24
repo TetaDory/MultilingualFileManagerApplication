@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+#fileSection {
+    margin-top: 30px;
+}
+
+#fileList {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.file-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.file-item h5 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.d-none {
+    display: none;
+}
