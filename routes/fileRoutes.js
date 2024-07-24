@@ -1,6 +1,6 @@
 const express = require('express');
 const fileController = require('../controllers/fileController');
-const ensureAuthenticated = require('../middlewares/authMiddleware');
+const ensureAuthenticated = require('../../middlewares/authMiddleware');
 const router = express.Router();
 
 router.post('/file', ensureAuthenticated, fileController.createFile);

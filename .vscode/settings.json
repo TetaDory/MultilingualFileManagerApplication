@@ -13,5 +13,6 @@
             "username": "root",
             "database": "file_manager"
         }
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
