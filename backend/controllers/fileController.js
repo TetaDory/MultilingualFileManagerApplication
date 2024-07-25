@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const File = require('../models/file');
 const path = require('path');
 const fs = require('fs');
@@ -35,3 +36,27 @@ exports.deleteFile = (req, res) => {
     });
   });
 };
+=======
+const fileQueue = require('../../queues/fileQueue');
+
+const fileController = {
+  createFile: async (req, res) => {
+    // Handle file creation logic
+    const { filePath } = req.body;
+    // Add a new job to the queue
+    await fileQueue.add({ filePath });
+    res.send('File added to queue for processing');
+  },
+  readFile: (req, res) => {
+    // Handle file reading
+  },
+  updateFile: (req, res) => {
+    // Handle file updating
+  },
+  deleteFile: (req, res) => {
+    // Handle file deletion
+  }
+};
+
+module.exports = fileController;
+>>>>>>> 7bf3791cde50b566130a2a3ebdd5076e3b326317
